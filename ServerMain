@@ -1,0 +1,7 @@
+__author__ = 'Alex'
+
+from BoardNetworking import BoardReceiver
+from BoardNetworking import BoardSender
+
+boardReceiver = BoardReceiver()
+boardSender = BoardSender()
