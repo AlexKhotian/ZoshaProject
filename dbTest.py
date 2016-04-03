@@ -1,6 +1,5 @@
 __author__ = 'Alex'
 
-import BoardDataBases
 from BoardDataBases import BoardDataBase
 
 if __name__ == '__main__':

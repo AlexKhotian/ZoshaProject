@@ -1,7 +1,10 @@
 __author__ = 'Alex'
 
 import sqlite3 as lite
-import sys
+
+# data defaults enum
+successCreate = 1
+errorCreate = -1
 
 class BoardDatabase(object):
     def __init__(self):
@@ -29,4 +32,4 @@ class BoardDatabase(object):
             cursor = connection.cursor()
             cursor.execute("SELECT Password FROM Users WHERE Name = '" + name + "'")
             info = cursor.fetchall()
-            print(info)
+            return info
